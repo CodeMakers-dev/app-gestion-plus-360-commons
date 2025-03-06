@@ -101,7 +101,7 @@ public class PagosEntity implements Serializable {
 	@Temporal(TemporalType.TIMESTAMP)
 	@LastModifiedDate
 	private Date fechaModificacion;
-
+	
 	@Basic(optional = false)
 	@Column(name = "activo")
 	private Boolean activo = true;
