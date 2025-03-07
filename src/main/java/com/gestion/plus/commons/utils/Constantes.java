@@ -18,6 +18,9 @@ public class Constantes {
 		public static final String LIST_MESSAGE= "Listado de mensajes";
 		public static final String PASSWORD_ERROR= "Contraseña incorrecta";
 		public static final String DEPARTMENT_ERROR= "Departamento no encontrado";
+		public static final String PASSWORD_RECOVER ="Recuperación de contraseña";
+		public static final String EMAIL_USER ="Se ha enviado un correo con las instrucciones para restablecer la contraseña.";
+		
 	
 	
 }
