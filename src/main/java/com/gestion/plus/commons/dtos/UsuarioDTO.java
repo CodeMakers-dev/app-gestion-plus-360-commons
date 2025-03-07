@@ -19,7 +19,6 @@ import lombok.NoArgsConstructor;
 public class UsuarioDTO implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
-
 	private Integer id;
 	private String usuario;
 	private String password;
@@ -31,5 +30,4 @@ public class UsuarioDTO implements Serializable{
 	private Boolean activo;
 	private String token;
 	private PersonaEntity persona;
-
 }
