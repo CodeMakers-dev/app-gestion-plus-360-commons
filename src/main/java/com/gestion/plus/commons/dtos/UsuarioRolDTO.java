@@ -2,6 +2,7 @@ package com.gestion.plus.commons.dtos;
 
 import java.io.Serializable;
 import java.util.Date;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,25 +12,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class ParametrosDTO implements Serializable{
+public class UsuarioRolDTO implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
-	
 	private Integer id;
-	
-    private String llave;
-	
-    private String valor;
-	
-    private String descripcion;
-	
+    private UsuarioDTO usuario;
+    private RolDTO rol;
 	private String usuarioCreacion;
-	
 	private Date fechaCreacion;
-
 	private String usuarioModificacion;
-
 	private Date fechaModificacion;
-	
 	private Boolean activo;
+
 }
