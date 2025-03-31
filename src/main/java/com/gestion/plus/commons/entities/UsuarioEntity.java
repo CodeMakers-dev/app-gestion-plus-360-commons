@@ -46,6 +46,10 @@ public class UsuarioEntity implements Serializable{
 	private String password;
 	
 	@ManyToOne
+    @JoinColumn(name = "id_rol", referencedColumnName = "id")
+    private RolEntity rol;
+	
+	@ManyToOne
 	@JoinColumn(name = "id_persona", referencedColumnName = "id", nullable = false)
 	private PersonaEntity persona;
 

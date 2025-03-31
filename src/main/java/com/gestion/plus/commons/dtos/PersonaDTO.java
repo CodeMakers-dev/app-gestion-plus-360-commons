@@ -57,5 +57,7 @@ public class PersonaDTO implements Serializable {
 	    private Date fechaModificacion;
 
 	    private Boolean activo;
+	    
+	    private RolDTO rol;
 
 }
