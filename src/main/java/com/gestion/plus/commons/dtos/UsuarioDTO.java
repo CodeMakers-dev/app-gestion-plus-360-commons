@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 import com.gestion.plus.commons.entities.PersonaEntity;
+import com.gestion.plus.commons.entities.RolEntity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -29,5 +30,6 @@ public class UsuarioDTO implements Serializable{
 	private List<RolDTO> lstRol;
 	private Boolean activo;
 	private String token;
+	private RolEntity rol;
 	private PersonaEntity persona;
 }
