@@ -18,5 +18,5 @@ import com.gestion.plus.commons.entities.UsuarioEntity;
 public interface UsuarioRepository extends JpaRepository<UsuarioEntity, Integer>{
 	Optional<UsuarioEntity> findByUsuarioAndPassword(String usuario, String password);
 	Optional<UsuarioEntity> findByUsuario(String usuario);
-	Optional<UsuarioEntity> findByPersonaId(Integer Id);
+	Optional<UsuarioEntity> findByPersonaId(Integer personaId);
 }
