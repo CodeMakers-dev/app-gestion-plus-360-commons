@@ -8,6 +8,8 @@ public class ResponseMessages {
 	public static final String UPDATED_SUCCESSFULLY ="Actualizado exitosamente";
 	public static final String DELETED_SUCCESSFULLY ="Eliminado exitosamente";
 	public static final String CONSULTED_SUCCESSFULLY ="Consulta exitosamente";
+	public static final String SENT_SUCCESSFULLY ="Enviado exitosamente";
+	public static final String SEND_ERROR ="Error al enviar mensaje";
 	
 	public static final String SAVE_ERROR = "Error al guardar";
 	public static final String PASSWORD_SUCCESSFULLY ="Contraseña actualizada correctamente.";

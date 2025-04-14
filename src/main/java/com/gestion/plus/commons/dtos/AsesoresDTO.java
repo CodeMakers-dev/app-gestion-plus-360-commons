@@ -3,11 +3,6 @@ package com.gestion.plus.commons.dtos;
 import java.io.Serializable;
 import java.util.Date;
 
-
-import com.gestion.plus.commons.entities.UsuarioEntity;
-
-import jakarta.persistence.Basic;
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -17,21 +12,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class MensajeMasivoDTO implements Serializable{
+public class AsesoresDTO implements Serializable  {
 	
 	private static final long serialVersionUID = 1L;
 
 	private Integer id;
 
-	private UsuarioEntity usuario;
+	private String nombre;
 
-	private String titulo;
+	private String correo;
 
-	private String mensaje;
+	private String telefono;
 
-/*	private String templateName;
-
-	private String languageCode;*/
+	private UsuarioDTO usuario;
 
 	private String usuarioCreacion;
 
@@ -42,4 +35,5 @@ public class MensajeMasivoDTO implements Serializable{
 	private Date fechaModificacion;
 
 	private Boolean activo;
+
 }
