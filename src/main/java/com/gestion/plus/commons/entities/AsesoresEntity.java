@@ -25,37 +25,33 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "mensaje_masivo", schema = "public")
+@Table(name = "asesores", schema = "public")
 @EntityListeners(AuditingEntityListener.class)
-public class MensajeMasivoEntity implements Serializable {
-
+public class AsesoresEntity implements Serializable{
+	
 	public static final long serialVersionUID = 1L;
-
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Basic(optional = false)
 	@Column(name = "id")
 	private Integer id;
 
+	@Basic(optional = false)
+	@Column(name = "nombre")
+	private String nombre;
+
+	@Basic(optional = true)
+	@Column(name = "correo")
+	private String correo;
+	
+	@Basic(optional = true)
+	@Column(name = "telefono")
+	private String telefono;
+	
 	@ManyToOne
 	@JoinColumn(name = "id_usuario", referencedColumnName = "id")
 	private UsuarioEntity usuario;
-
-	@Basic(optional = false)
-	@Column(name = "titulo")
-	private String titulo;
-
-	@Basic(optional = false)
-	@Column(name = "mensaje")
-	private String mensaje;
-	
-	/*@Basic(optional = false)
-	@Column(name = "template_name")
-	private String templateName;
-	
-	@Basic(optional = false)
-	@Column(name = "language_code")
-	private String languageCode;*/
 
 	@Basic(optional = false)
 	@Column(name = "usuario_creacion", insertable = true, updatable = false)
@@ -82,4 +78,5 @@ public class MensajeMasivoEntity implements Serializable {
 	@Basic(optional = false)
 	@Column(name = "activo")
 	private Boolean activo = true;
+
 }
